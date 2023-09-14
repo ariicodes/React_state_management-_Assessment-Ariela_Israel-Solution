@@ -23,7 +23,7 @@ function PostList({ posts, onDelete }) {
 
 	return (
 		<div className='post-list'>
-			<ul>{list}</ul>
+			<ul style={{listStyle: 'none', padding: '0'}}>{list}</ul>
 		</div>
 	);
 }
