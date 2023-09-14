@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Post({ type, content }) {
+function Post({ type, content, deleteBtnHandler }) {
 	return (
 		<div className='post'>
 			{type === 'Text' ? (
@@ -11,7 +11,12 @@ function Post({ type, content }) {
 					src={content}
 				/>
 			)}
-			<button name='delete'>Delete</button>
+			<button
+				name='delete'
+				onClick={deleteBtnHandler}
+			>
+				Delete
+			</button>
 		</div>
 	);
 }
